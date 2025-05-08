@@ -6,7 +6,7 @@
 namespace redfish
 {
 
-void requestRoutesSoftwareInventoryCollection(App& app)
+inline void requestRoutesSoftwareInventoryCollection(App& app)
 {
     BMCWEB_ROUTE(app, "/redfish/v1/UpdateService/SoftwareInventory/")
         .methods(boost::beast::http::verb::get)(
@@ -24,7 +24,7 @@ void requestRoutesSoftwareInventoryCollection(App& app)
             });
 }
 
-void requestRoutesSoftwareInventory(App& app)
+inline void requestRoutesSoftwareInventory(App& app)
 {
     BMCWEB_ROUTE(app, "/redfish/v1/UpdateService/SoftwareInventory/BIOS/")
         .methods(boost::beast::http::verb::get)(
