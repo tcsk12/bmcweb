@@ -7,7 +7,7 @@
 #include "http_request.hpp"
 #include "redfish_oem_routing.hpp"
 #include "verb.hpp"
-
+#include "software_inventory.hpp"
 #include <memory>
 
 namespace redfish

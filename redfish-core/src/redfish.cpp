@@ -52,6 +52,7 @@
 #include "trigger.hpp"
 #include "update_service.hpp"
 #include "virtual_media.hpp"
+#include "software_inventory.hpp"
 
 namespace redfish
 {
@@ -103,6 +104,10 @@ RedfishService::RedfishService(App& app)
     requestRoutesChassisDrive(app);
     requestRoutesChassisDriveName(app);
     requestRoutesUpdateService(app);
+    
+    requestRoutesSoftwareInventoryCollection(app);
+    requestRoutesSoftwareInventory(app);
+
     requestRoutesStorageCollection(app);
     requestRoutesStorage(app);
     requestRoutesStorageControllerCollection(app);
