@@ -376,6 +376,7 @@ srcfiles_bmcweb = files(
     'redfish-core/src/redfish.cpp',
     'redfish-core/src/registries.cpp',
     'redfish-core/src/resource_messages.cpp',
+    'redfish-core/src/software_inventory.cpp',
     'redfish-core/src/subscription.cpp',
     'redfish-core/src/task_messages.cpp',
     'redfish-core/src/utils/dbus_utils.cpp',

@@ -104,7 +104,9 @@ RedfishService::RedfishService(App& app)
     requestRoutesChassisDrive(app);
     requestRoutesChassisDriveName(app);
     requestRoutesUpdateService(app);
-    
+    requestRoutesSoftwareInventoryCollection(app);
+    requestRoutesSoftwareInventory(app);
+
     requestRoutesSoftwareInventoryCollection(app);
     requestRoutesSoftwareInventory(app);
 
